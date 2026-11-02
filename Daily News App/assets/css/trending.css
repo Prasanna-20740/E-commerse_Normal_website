@@ -1,0 +1,194 @@
+/* =====================================================
+   TRENDING TOPICS
+===================================================== */
+
+.trending-topics-section {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeee;
+
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 18px 0;
+
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.trending-container {
+
+    width: 90%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.trending-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.trending-icon {
+
+    font-size: 20px;
+
+}
+
+
+.trending-heading h2 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+}
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+.trending-list {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =====================================================
+   TOPIC
+===================================================== */
+
+.trending-topic {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    padding: 8px 14px;
+
+    background: #f5f5f5;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 20px;
+
+    color: #222222;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+
+}
+
+
+.trending-topic:hover {
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border-color: #111111;
+
+}
+
+
+.hash {
+
+    color: #ed1111;
+
+    font-weight: 700;
+
+}
+
+
+.trending-topic:hover .hash {
+
+    color: #ffffff;
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.no-trending {
+
+    color: #777777;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .trending-container {
+
+        width: 94%;
+
+    }
+
+
+    .trending-list {
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+
+    }
+
+
+    .trending-topic {
+
+        flex-shrink: 0;
+
+        font-size: 13px;
+
+    }
+
+}

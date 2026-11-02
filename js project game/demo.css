@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+
+    background-color: black;
+    color: white;
+    padding: 40px;
+    margin: 5px;
+}
+h1{font-size: 75px;}
+
+.pro{
+    display: inline;
+    color: white;
+}
+
+li:hover{
+    color: red;
+}
+ul{font-size: 30px;}
+
+input{
+    width: 60%;
+    padding: 15px;
+}
+.rw{
+    margin: 20px;
+    font-size: 30px;
+    font-style: inherit;
+}
+.sc{
+    font-size: 50px;
+}
+.bn{
+    font-size: 20px;
+}

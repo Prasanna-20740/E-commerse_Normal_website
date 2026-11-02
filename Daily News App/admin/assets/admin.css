@@ -1,0 +1,236 @@
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f5f7;
+    color: #111111;
+}
+
+
+/* =====================================================
+   ADMIN SIDEBAR
+===================================================== */
+
+.admin-sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 315px;
+    height: 100vh;
+
+    background: #1f1f1f;
+    color: #ffffff;
+
+    padding: 30px 8px;
+
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+
+/* =====================================================
+   SIDEBAR LOGO
+===================================================== */
+
+.admin-brand {
+    padding: 0 14px 32px;
+
+    border-bottom: 1px solid #333333;
+}
+
+
+.admin-brand span {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.admin-brand b {
+    color: #ed1111;
+}
+
+
+/* =====================================================
+   SIDEBAR MENU
+===================================================== */
+
+.admin-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-top: 28px;
+}
+
+
+/* =====================================================
+   MENU ITEM
+===================================================== */
+
+.menu-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    padding: 16px 20px;
+
+    color: #dddddd;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =====================================================
+   MENU HOVER
+===================================================== */
+
+.menu-item:hover {
+    background: #333333;
+
+    color: #ffffff;
+
+    transform: translateX(2px);
+}
+
+
+/* =====================================================
+   ACTIVE MENU
+===================================================== */
+
+.menu-item.active {
+    background: #ed1111;
+
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+
+.menu-item.active:hover {
+    background: #ed1111;
+
+    color: #ffffff;
+
+    transform: none;
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.logout-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: calc(100% - 10px);
+
+    margin: 50px 5px 0;
+
+    padding: 16px;
+
+    background: #333333;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+
+.logout-button:hover {
+    background: #ed1111;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.admin-main {
+    margin-left: 315px;
+
+    min-height: 100vh;
+
+    padding: 50px 40px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .admin-sidebar {
+        width: 250px;
+    }
+
+    .admin-main {
+        margin-left: 250px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-sidebar {
+        width: 220px;
+    }
+
+    .admin-main {
+        margin-left: 220px;
+
+        padding: 30px 20px;
+    }
+
+}
